@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of a Full-Stack JavaScript Developer & Computer Science Enthusiast"
+    />
+    <title>Portfolio | Software Engineer</title>
+    <!-- load font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.3/ionicons.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="section-container">
+      <div class="logo">Portfolio.</div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section-container">
+      <div class="hero-container">
+        <div class="profile-picture">
+          <img src="images/my_image.png" alt="Profile Picture" />
+        </div>
+
+        <h1>Hi, I'm <span class="highlight">Belton Mmata</span></h1>
+        <p class="changing-text">
+          Full-Stack Developer | Software Engineer | Tech Enthusiast
+        </p>
+        <div class="social-icons">
+          <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about section-container">
+      <h2 class="section-header">About Me</h2>
+      <div class="about-content">
+        <div class="about-overview">
+          <div class="about-image">
+            <img src="images/about_me.jpg" alt="About Image" />
+          </div>
+          <div class="about-summary">
+            <div class="left-about-overview">
+              <ul>
+                <li class="about-overview-information">
+                  <div class="lable">Age:</div>
+                  <div class="infor">21years</div>
+                </li>
+                <li class="about-overview-information">
+                  <div class="lable">Email:</div>
+                  <div class="infor">beltonmmata@gmail.com</div>
+                </li>
+                <li class="about-overview-information">
+                  <div class="lable">Frelancer:</div>
+                  <div class="infor">Available</div>
+                </li>
+                <li class="about-overview-information">
+                  <div class="lable">Phone:</div>
+                  <div class="infor">0708152289</div>
+                </li>
+              </ul>
+            </div>
+            <div class="right-about-overview">
+              <ul>
+                <li class="about-overview-information">
+                  <div class="lable">Age:</div>
+                  <div class="infor">21years</div>
+                </li>
+                <li class="about-overview-information">
+                  <div class="lable">Age:</div>
+                  <div class="infor">21years</div>
+                </li>
+                <li class="about-overview-information">
+                  <div class="lable">Age:</div>
+                  <div class="infor">21years</div>
+                </li>
+                <li class="about-overview-information">
+                  <div class="lable">Age:</div>
+                  <div class="infor">21years</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-details">
+          <p>
+            I am a dedicated tech enthusiast with great aspirations to expand my
+            skills in Software Engineer and Web Technologies. Through the
+            learning programs, I have evolved into a proficient software
+            engineer.I bring a year of invaluable experience and a rich skill
+            set to ensure project success. My professional trajectory has shaped
+            me into an open-minded and critical thinker with strengths in
+            project management. I actively engage in discussions and
+            collaborations throughout the design process, finding satisfaction
+            in every step from conceptualization to implementation. Eager to
+            contribute my blend of technical prowess, creativity, and project
+            management to a like-minded team, I embrace the challenge of
+            leveraging technology for success.
+          </p>
+          <div class="tab-buttons">
+            <button class="tab-button active" onclick="showTab('skills')">
+              Skills
+            </button>
+            <button class="tab-button" onclick="showTab('education')">
+              Education
+            </button>
+            <button class="tab-button" onclick="showTab('experience')">
+              Experience
+            </button>
+          </div>
+          <div class="tab-content active" id="skills">
+            <p>
+              JavaScript, React, Node.js, Next.js, MongoDB, SQL, Python,
+              Tailwind CSS
+            </p>
+          </div>
+          <div class="tab-content" id="education">
+            <p>Diploma in Computer Science</p>
+          </div>
+          <div class="tab-content" id="experience">
+            <p>
+              Worked on several projects including full-stack eCommerce
+              applications and SaaS dashboards.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="services section-container">
+      <h2 class="section-header">My Services</h2>
+      <div class="services-container">
+        <div class="service-card">
+          <ion-icon name="code-outline"></ion-icon>
+          <h3>Web Development</h3>
+          <p>
+            Building responsive and interactive web applications. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Voluptatibus, corrupti.
+          </p>
+        </div>
+        <div class="service-card">
+          <ion-icon name="server-outline"></ion-icon>
+          <h3>Backend Development</h3>
+          <p>Developing efficient and scalable backend APIs.</p>
+        </div>
+        <div class="service-card">
+          <ion-icon name="server-outline"></ion-icon>
+          <h3>Backend Development</h3>
+          <p>Developing efficient and scalable backend APIs.</p>
+        </div>
+        <div class="service-card">
+          <ion-icon name="server-outline"></ion-icon>
+          <h3>Backend Development</h3>
+          <p>Developing efficient and scalable backend APIs.</p>
+        </div>
+        <div class="service-card">
+          <ion-icon name="server-outline"></ion-icon>
+          <h3>Backend Development</h3>
+          <p>Developing efficient and scalable backend APIs.</p>
+        </div>
+      </div>
+    </section>
+    <!-- portifolio -->
+    <section id="portfolio" class="portfolio section-container">
+      <h2 class="section-header">My Work</h2>
+      <div class="portfolio-grid">
+        <div class="project-card">
+          <div class="image">
+            <img src="images/about_me.jpg" alt="Portfolio Website" />
+          </div>
+          <div class="content">
+            <h3>Portfolio Website</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipi Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Dignissimos, minima non
+              labore facilis voluptatum assumenda?
+            </p>
+            <div class="technologies-used">
+              <ul>
+                <li class="technology">HTML</li>
+                <li class="technology">CSS</li>
+                <li class="technology">JavaScript</li>
+              </ul>
+            </div>
+            <div class="links">
+              <div class="live-demo">
+                <a href="#">Live Demo</a>
+              </div>
+              <div class="github-redirect">
+                <a href="#">
+                  <ion-icon name="logo-github"> </ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="image">
+            <img src="images/about_me.jpg" alt="Portfolio Website" />
+          </div>
+          <div class="content">
+            <h3>Another Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+              exercitationem.
+            </p>
+            <div class="technologies-used">
+              <ul>
+                <li class="technology">React</li>
+                <li class="technology">Node.js</li>
+                <li class="technology">MongoDB</li>
+              </ul>
+            </div>
+            <div class="links">
+              <div class="live-demo">
+                <a href="#">Live Demo</a>
+              </div>
+              <div class="github-redirect">
+                <a href="#">
+                  <ion-icon name="logo-github"> </ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="image">
+            <img src="images/about_me.jpg" alt="Portfolio Website" />
+          </div>
+          <div class="content">
+            <h3>Portfolio Website</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipi Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Dignissimos, minima non
+              labore facilis voluptatum assumenda?
+            </p>
+            <div class="technologies-used">
+              <ul>
+                <li class="technology">HTML</li>
+                <li class="technology">CSS</li>
+                <li class="technology">JavaScript</li>
+              </ul>
+            </div>
+            <div class="links">
+              <div class="live-demo">
+                <a href="#">Live Demo</a>
+              </div>
+              <div class="github-redirect">
+                <a href="#">
+                  <ion-icon name="logo-github"> </ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="image">
+            <img src="images/about_me.jpg" alt="Portfolio Website" />
+          </div>
+          <div class="content">
+            <h3>Another Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+              exercitationem.
+            </p>
+            <div class="technologies-used">
+              <ul>
+                <li class="technology">React</li>
+                <li class="technology">Node.js</li>
+                <li class="technology">MongoDB</li>
+              </ul>
+            </div>
+            <div class="links">
+              <div class="live-demo">
+                <a href="#">Live Demo</a>
+              </div>
+              <div class="github-redirect">
+                <a href="#">
+                  <ion-icon name="logo-github"> </ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more project cards here -->
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-container">
+      <h2 class="section-header">Contact Me</h2>
+      <div class="content-container">
+        <!-- Left Side (Contact Details) -->
+        <div class="left">
+          <p>
+            <ion-icon name="mail-outline"></ion-icon> Email:
+            your.email@example.com
+          </p>
+          <p><ion-icon name="call-outline"></ion-icon> Phone: +1234567890</p>
+          <p>
+            <ion-icon name="location-outline"></ion-icon> Location: Nairobi,
+            Kenya
+          </p>
+          <p>
+            <ion-icon name="globe-outline"></ion-icon> Website:
+            codewithbelton.dev
+          </p>
+        </div>
+
+        <!-- Right Side (Form) -->
+        <form class="contact-form">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Subject" required />
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section-container">
+      <p>&copy; 2025 Belton Mmata. All Rights Reserved.</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
