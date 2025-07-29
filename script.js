@@ -1,69 +1,146 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Auto-changing text in the hero section
-  const changingText = document.querySelector(".changing-text");
+  // === Typewriter Effect ===
   const textArray = [
-    "Full Stack Developer",
     "Software Engineer",
-    "JavaScript Expert",
-    "MERN Stack Developer",
-    "Tech Enthusiast",
+    "Full-Stack Web Developer",
+    "MERN Stack Enthusiast",
+    "Automation & Python Dev",
   ];
-  let textIndex = 0;
+  let textIndex = 0,
+    charIndex = 0,
+    isDeleting = false;
+  const changingText = document.querySelector(".changing-text");
 
-  function changeText() {
-    changingText.textContent = textArray[textIndex];
-    textIndex = (textIndex + 1) % textArray.length;
+  function typeEffect() {
+    const current = textArray[textIndex];
+    const display = current.substring(0, charIndex);
+    changingText.textContent = display;
+
+    if (!isDeleting && charIndex < current.length) {
+      charIndex++;
+      setTimeout(typeEffect, 100);
+    } else if (isDeleting && charIndex > 0) {
+      charIndex--;
+      setTimeout(typeEffect, 60);
+    } else {
+      isDeleting = !isDeleting;
+      if (!isDeleting) textIndex = (textIndex + 1) % textArray.length;
+      setTimeout(typeEffect, 1000);
+    }
   }
-  setInterval(changeText, 3000);
+  if (changingText) typeEffect();
 
-  // Tabs in About Me section
+  // === Smooth Scroll ===
+  document.querySelectorAll("nav a").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+      if (href && href.startsWith("#")) {
+        e.preventDefault();
+        const target = document.getElementById(href.substring(1));
+        if (target) {
+          window.scrollTo({ top: target.offsetTop - 80, behavior: "smooth" });
+        }
+      }
+    });
+  });
+
+  // === Tabs in About Section ===
   const tabButtons = document.querySelectorAll(".tab-button");
   const tabContents = document.querySelectorAll(".tab-content");
 
-  tabButtons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-      tabButtons.forEach((btn) => btn.classList.remove("active"));
-      tabContents.forEach((content) => content.classList.remove("active"));
-      button.classList.add("active");
+  tabButtons.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      tabButtons.forEach((b) => b.classList.remove("active"));
+      tabContents.forEach((c) => c.classList.remove("active"));
+      btn.classList.add("active");
       tabContents[index].classList.add("active");
     });
   });
 
-  // Smooth scrolling for navigation links
-  document.querySelectorAll("nav ul li a").forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
+  // === Contact Form Submit ===
+  const contactForm = document.querySelector("form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
       e.preventDefault();
-      const targetId = this.getAttribute("href").substring(1);
-      const targetSection = document.getElementById(targetId);
-      window.scrollTo({
-        top: targetSection.offsetTop - 50,
-        behavior: "smooth",
-      });
+      alert("Thanks! Your message has been sent successfully.");
+      contactForm.reset();
     });
-  });
+  }
 
-  // Contact Form Submission (Dummy Functionality)
-  document.querySelector("form").addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert(
-      "Your message has been sent successfully! I'll get back to you soon."
-    );
-    document.querySelector("form").reset();
-  });
-
-  // Animate elements on scroll
+  // === Scroll Fade-In Observer ===
+  const fadeElements = document.querySelectorAll(".fade-in");
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
+        if (entry.isIntersecting) entry.target.classList.add("visible");
       });
     },
     { threshold: 0.2 }
   );
+  fadeElements.forEach((el) => observer.observe(el));
 
-  document.querySelectorAll(".fade-in").forEach((element) => {
-    observer.observe(element);
+  // === Scroll-to-Top Button ===
+  const scrollBtn = document.createElement("div");
+  scrollBtn.className = "scroll-to-top";
+  scrollBtn.innerHTML = "^";
+  document.body.appendChild(scrollBtn);
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
+
+  window.addEventListener("scroll", () => {
+    scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+  });
+
+  // === Hamburger Menu Toggle ===
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  }
+
+  // === Nav Active Link ===
+  const navItems = document.querySelectorAll(".nav-link");
+  navItems.forEach((link) =>
+    link.addEventListener("click", () => {
+      navItems.forEach((el) => el.classList.remove("active"));
+      link.classList.add("active");
+      navLinks?.classList.remove("show");
+    })
+  );
+
+  // === Dark Mode Toggle with Ionicons ===
+  const darkToggle = document.getElementById("dark-mode-toggle");
+  const icon = darkToggle?.querySelector("ion-icon");
+
+  if (darkToggle && icon) {
+    darkToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      icon.setAttribute(
+        "name",
+        document.body.classList.contains("dark") ? "sunny" : "moon"
+      );
+      icon.classList.add("spin");
+      setTimeout(() => icon.classList.remove("spin"), 1000); // remove spin after 1s
+    });
+  }
+});
+
+// FAQ Toggle Logic
+document.querySelectorAll(".faq-toggle").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const item = btn.closest(".faq-item");
+    item.classList.toggle("open");
+  });
+});
+
+// Contact Form Feedback
+document.getElementById("contact-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  alert("Thanks for reaching out! I'll respond shortly.");
+  e.target.reset();
 });

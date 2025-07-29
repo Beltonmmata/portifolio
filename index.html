@@ -5,349 +5,668 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of a Full-Stack JavaScript Developer & Computer Science Enthusiast"
+      content="Belton M'mata - Fullstack Developer Portfolio"
     />
-    <title>Portfolio | Software Engineer</title>
-    <!-- load font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Belton M'mata | Fullstack Developer</title>
+
+    <!-- Fonts and Styles -->
+    <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.3/ionicons.js"></script>
+    <!--ionic icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
+
   <body>
     <!-- Navbar -->
-    <nav class="section-container">
-      <div class="logo">Portfolio.</div>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <nav class="section-container nav">
+      <div class="logo">Portifolio</div>
+
+      <!-- Hamburger Icon for Mobile -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="hero" class="hero section-container">
       <div class="hero-container">
         <div class="profile-picture">
-          <img src="images/my_image.png" alt="Profile Picture" />
+          <img src="images/my_image.png" alt="Belton Profile" />
         </div>
-
-        <h1>Hi, I'm <span class="highlight">Belton Mmata</span></h1>
-        <p class="changing-text">
-          Full-Stack Developer | Software Engineer | Tech Enthusiast
-        </p>
+        <h1>Hi, <span class="highlight">I'm Belton M'mata Vidonyi</span></h1>
+        <p class="changing-text"></p>
         <div class="social-icons">
-          <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-github"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="https://linkedin.com/in/your-profile" target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a href="https://github.com/Beltonmmata" target="_blank"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+          <a href="https://twitter.com/yourhandle" target="_blank"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+          <a href="https://facebook.com/yourhandle" target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+          <a href="https://instagram.com/yourhandle" target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
         </div>
       </div>
     </section>
 
-    <!-- About Me Section -->
+    <!-- About Me -->
     <section id="about" class="about section-container">
       <h2 class="section-header">About Me</h2>
       <div class="about-content">
-        <div class="about-overview">
+        <div class="about-overview about-summary">
           <div class="about-image">
-            <img src="images/about_me.jpg" alt="About Image" />
+            <img src="images/about_me.jpg" alt="Belton" />
           </div>
-          <div class="about-summary">
-            <div class="left-about-overview">
-              <ul>
-                <li class="about-overview-information">
-                  <div class="lable">Age:</div>
-                  <div class="infor">21years</div>
-                </li>
-                <li class="about-overview-information">
-                  <div class="lable">Email:</div>
-                  <div class="infor">beltonmmata@gmail.com</div>
-                </li>
-                <li class="about-overview-information">
-                  <div class="lable">Frelancer:</div>
-                  <div class="infor">Available</div>
-                </li>
-                <li class="about-overview-information">
-                  <div class="lable">Phone:</div>
-                  <div class="infor">0708152289</div>
-                </li>
-              </ul>
-            </div>
-            <div class="right-about-overview">
-              <ul>
-                <li class="about-overview-information">
-                  <div class="lable">Age:</div>
-                  <div class="infor">21years</div>
-                </li>
-                <li class="about-overview-information">
-                  <div class="lable">Age:</div>
-                  <div class="infor">21years</div>
-                </li>
-                <li class="about-overview-information">
-                  <div class="lable">Age:</div>
-                  <div class="infor">21years</div>
-                </li>
-                <li class="about-overview-information">
-                  <div class="lable">Age:</div>
-                  <div class="infor">21years</div>
-                </li>
-              </ul>
-            </div>
+          <ul class="about-summary">
+            <li><strong>Age:</strong> 22 years</li>
+            <li><strong>Email:</strong> beltonmmata@gmail.com</li>
+            <li><strong>Website:</strong> belton-portifolio.netlify.app</li>
+            <li><strong>Phone:</strong> 0708152289</li>
+            <li><strong>Career:</strong> Computer Science</li>
+            <li><strong>Freelancer:</strong> Available</li>
+          </ul>
+          <div class="about-action">
+            <a href="#contact" class="about-action-link hire-me">Hire Me</a>
+            <a
+              href="cv/Belton_Mmata_CV.pdf"
+              target="_blank"
+              class="about-action-link download-cv"
+              >Download CV</a
+            >
           </div>
         </div>
-
         <div class="about-details">
           <p>
-            I am a dedicated tech enthusiast with great aspirations to expand my
-            skills in Software Engineer and Web Technologies. Through the
-            learning programs, I have evolved into a proficient software
-            engineer.I bring a year of invaluable experience and a rich skill
-            set to ensure project success. My professional trajectory has shaped
-            me into an open-minded and critical thinker with strengths in
-            project management. I actively engage in discussions and
-            collaborations throughout the design process, finding satisfaction
-            in every step from conceptualization to implementation. Eager to
-            contribute my blend of technical prowess, creativity, and project
-            management to a like-minded team, I embrace the challenge of
-            leveraging technology for success.
+            I’m <strong>Belton M'mata Vidonyi</strong>, a passionate full-stack
+            web developer and automation enthusiast based in Kenya. I specialize
+            in building scalable web applications using the MERN stack (MongoDB,
+            Express.js, React, Node.js) and modern styling tools like
+            TailwindCSS. I also have strong experience with MySQL, Docker, and
+            deployment platforms like Netlify and Render.
+          </p>
+          <p>
+            Beyond web development, I’m fascinated by automation and machine
+            learning, which led me to build Python-based tools like net salary
+            calculators and symptom prediction apps. I believe in solving
+            real-world problems with global tech solutions — that’s why I’m
+            working on launching <strong>Shopper</strong>, my own SaaS platform
+            for eCommerce.
+          </p>
+          <p>
+            I'm currently expanding into mobile development with Dart and
+            Flutter to become a truly versatile developer. Whether it’s
+            freelance gigs, startups, or collaborative projects — I’m always
+            ready to build, learn, and grow.
           </p>
           <div class="tab-buttons">
-            <button class="tab-button active" onclick="showTab('skills')">
-              Skills
-            </button>
-            <button class="tab-button" onclick="showTab('education')">
-              Education
-            </button>
-            <button class="tab-button" onclick="showTab('experience')">
-              Experience
-            </button>
+            <button class="tab-button active">Skills</button>
+            <button class="tab-button">Education</button>
+            <button class="tab-button">Experience</button>
           </div>
-          <div class="tab-content active" id="skills">
-            <p>
-              JavaScript, React, Node.js, Next.js, MongoDB, SQL, Python,
-              Tailwind CSS
-            </p>
+          <div class="tab-content active">
+            <ul>
+              <li>
+                <h3>Languages</h3>
+                <p>JavaScript, Python, HTML, CSS, SQL,TypeScript</p>
+              </li>
+              <li>
+                <h3>Frameworks</h3>
+                <p>React.js, Node.js, Express, Tailwind</p>
+              </li>
+              <li>
+                <h3>Database</h3>
+                <p>MongoDB, MySQL,Ms Sql, Redie</p>
+              </li>
+              <li>
+                <h3>Tools</h3>
+                <p>Git & GitHub,Github actions, Docker, Render, Netlify</p>
+              </li>
+            </ul>
           </div>
-          <div class="tab-content" id="education">
-            <p>Diploma in Computer Science</p>
+          <div class="tab-content">
+            <ul>
+              <li>
+                <h3>KCPE – <span>Until 2017</span></h3>
+                <p>
+                  I successfully completed my Kenya Certificate of Primary
+                  Education (KCPE), which earned me admission to Friends Bwake
+                  Boys High School in Kitale.
+                </p>
+              </li>
+
+              <li>
+                <h3>KCSE – <span>2018–2022</span></h3>
+                <p>
+                  I attended Friends Bwake Boys High School from 2018 to 2022,
+                  where I completed my Kenya Certificate of Secondary Education
+                  (KCSE) and graduated with a C+. This qualified me to pursue
+                  higher education at Kibabii University.
+                </p>
+              </li>
+
+              <li>
+                <h3>Diploma in Computer Science – <span>2022–2025</span></h3>
+                <p>
+                  In September 2022, I was placed by KUCCPS to pursue a Diploma
+                  in Computer Science at Kibabii University. During my studies,
+                  I gained practical knowledge in areas such as Operating
+                  Systems, DBMS, Information Systems, Artificial Intelligence,
+                  Computer Architecture, Mathematics for Computer Science, Java
+                  Programming, Web Design, Data Structures & Algorithms,
+                  Networking, and Distributed Systems. Having satisfied the
+                  examiners, I will be awarded my diploma in 2025.
+                </p>
+              </li>
+
+              <li>
+                <h3>PLP Software Engineering Program – <span>2025</span></h3>
+                <p>
+                  In 2025, I joined the Power Learn Project (PLP) Software
+                  Engineering Program as part of the July cohort. I'm currently
+                  progressing through the program, sharpening my software
+                  development and professional skills.
+                </p>
+              </li>
+
+              <li>
+                <h3>Future Learning Goals</h3>
+                <p>
+                  I strongly believe learning never stops. Whether through
+                  formal education or hands-on experience, I’m constantly
+                  expanding my skills to stay ahead in the fast-paced tech
+                  world.
+                </p>
+              </li>
+            </ul>
           </div>
-          <div class="tab-content" id="experience">
-            <p>
-              Worked on several projects including full-stack eCommerce
-              applications and SaaS dashboards.
-            </p>
+          <div class="tab-content">
+            <ul>
+              <li>
+                Freelancer with experience in eCommerce, agri-business systems,
+                and personal SaaS tools
+              </li>
+              <li>
+                Actively building open-source and startup-level projects like
+                Shopper
+              </li>
+              <li>Searching for gigs on platforms like Upwork</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    <!-- Services Section -->
+
+    <!-- overview -->
+    <section id="overview" class="overview-container section-container">
+      <div class="overview-container">
+        <div class="overview-card">
+          <h3>💡 Interests</h3>
+          <p>
+            I enjoy building full-stack applications using the MERN stack,
+            styling with TailwindCSS, and exploring ways to automate systems
+            with Python. I'm also learning Dart & Flutter to expand into mobile
+            development. Technology excites me because it's always evolving —
+            and I love keeping up.
+          </p>
+        </div>
+        <div class="overview-card middle-card">
+          <h3>🚀 Mission</h3>
+          <p>
+            My mission is to use technology to solve real problems around me. I
+            want to empower local businesses through tools that are practical,
+            scalable, and built with intention. Everything I create — from
+            eCommerce platforms to prediction systems — aims to improve lives
+            with smart automation.
+          </p>
+        </div>
+        <div class="overview-card">
+          <h3>🎯 Vision</h3>
+          <p>
+            I envision launching impactful tech startups that bring global-level
+            solutions to local challenges. My long-term goal is to scale my
+            platform, <strong>Shopper</strong>, into an essential tool for
+            African SMEs — combining innovation, accessibility, and automation.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+    <!-- Services -->
     <section id="services" class="services section-container">
-      <h2 class="section-header">My Services</h2>
+      <h2 class="section-header">What I Offer</h2>
       <div class="services-container">
         <div class="service-card">
+          <ion-icon name="brush-outline"></ion-icon>
+          <h3>Web Design</h3>
+          <p>
+            I design clean, modern, and user-friendly interfaces tailored to
+            your brand. Using HTML, CSS, and design systems, I ensure your
+            digital presence is both aesthetic and accessible.
+          </p>
+        </div>
+
+        <div class="service-card">
           <ion-icon name="code-outline"></ion-icon>
-          <h3>Web Development</h3>
+          <h3>Frontend Development</h3>
           <p>
-            Building responsive and interactive web applications. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Voluptatibus, corrupti.
+            I build fast, responsive, and interactive web apps using React,
+            JavaScript, and Tailwind CSS — optimized for performance and a
+            smooth user experience across all devices.
           </p>
         </div>
+
         <div class="service-card">
           <ion-icon name="server-outline"></ion-icon>
-          <h3>Backend Development</h3>
-          <p>Developing efficient and scalable backend APIs.</p>
+          <h3>Backend & API Development</h3>
+          <p>
+            I create secure, scalable REST APIs and microservices using Node.js,
+            Express, and MongoDB/MySQL. I follow modular architecture and handle
+            complex business logic with ease.
+          </p>
         </div>
+
         <div class="service-card">
-          <ion-icon name="server-outline"></ion-icon>
-          <h3>Backend Development</h3>
-          <p>Developing efficient and scalable backend APIs.</p>
+          <ion-icon name="cog-outline"></ion-icon>
+          <h3>Automation & Scripting</h3>
+          <p>
+            I develop Python-based automation scripts and tools — from machine
+            learning models to task automation like salary calculators and
+            health symptom predictors.
+          </p>
         </div>
+
         <div class="service-card">
-          <ion-icon name="server-outline"></ion-icon>
-          <h3>Backend Development</h3>
-          <p>Developing efficient and scalable backend APIs.</p>
+          <ion-icon name="cube-outline"></ion-icon>
+          <h3>Database Design & Integration</h3>
+          <p>
+            I structure, optimize, and manage both SQL and NoSQL databases.
+            Whether it’s MongoDB for flexible documents or MySQL for relational
+            data, I ensure data flows efficiently.
+          </p>
         </div>
+
         <div class="service-card">
-          <ion-icon name="server-outline"></ion-icon>
-          <h3>Backend Development</h3>
-          <p>Developing efficient and scalable backend APIs.</p>
+          <ion-icon name="cloud-outline"></ion-icon>
+          <h3>Deployment & Cloud Hosting</h3>
+          <p>
+            I handle full deployment using platforms like Render, Netlify, and
+            Docker. I also set up CI/CD pipelines to keep your apps live,
+            updated, and production-ready.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <ion-icon name="layers-outline"></ion-icon>
+          <h3>Microservices Architecture</h3>
+          <p>
+            I break down complex systems into independent, deployable
+            microservices. This ensures your apps are easier to maintain, scale,
+            and evolve over time.
+          </p>
         </div>
       </div>
     </section>
-    <!-- portifolio -->
+
+    <!-- Portfolio -->
     <section id="portfolio" class="portfolio section-container">
-      <h2 class="section-header">My Work</h2>
+      <h2 class="section-header">My Projects</h2>
       <div class="portfolio-grid">
+        <!-- Project 1: Portfolio Website -->
         <div class="project-card">
-          <div class="image">
-            <img src="images/about_me.jpg" alt="Portfolio Website" />
+          <div class="project-card-image">
+            <img src="images/about_me.jpg" alt="Portfolio" />
           </div>
           <div class="content">
             <h3>Portfolio Website</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipi Lorem ipsum dolor
-              sit, amet consectetur adipisicing elit. Dignissimos, minima non
-              labore facilis voluptatum assumenda?
+              My personal website showcasing my mission, skills, and projects —
+              built for the Hackathon.
             </p>
-            <div class="technologies-used">
-              <ul>
-                <li class="technology">HTML</li>
-                <li class="technology">CSS</li>
-                <li class="technology">JavaScript</li>
-              </ul>
-            </div>
+            <ul class="technologies-used">
+              <li class="technology">HTML</li>
+              <li class="technology">CSS</li>
+              <li class="technology">JavaScript</li>
+            </ul>
             <div class="links">
-              <div class="live-demo">
-                <a href="#">Live Demo</a>
-              </div>
-              <div class="github-redirect">
-                <a href="#">
-                  <ion-icon name="logo-github"> </ion-icon>
-                </a>
-              </div>
+              <a href="https://belton-portifolio.netlify.app/" class="live-demo"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/Beltonmmata/portifolio"
+                class="github-link"
+                >GitHub</a
+              >
             </div>
           </div>
         </div>
 
+        <!-- Project 2: Azula E-commerce -->
         <div class="project-card">
-          <div class="image">
-            <img src="images/about_me.jpg" alt="Portfolio Website" />
+          <div class="project-card-image">
+            <img src="images/about_me.jpg" alt="Azula" />
           </div>
           <div class="content">
-            <h3>Another Project</h3>
+            <h3>Azula E-commerce</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-              exercitationem.
+              A complete eCommerce frontend built with promo code logic, cart
+              system, and M-PESA integration.
             </p>
-            <div class="technologies-used">
-              <ul>
-                <li class="technology">React</li>
-                <li class="technology">Node.js</li>
-                <li class="technology">MongoDB</li>
-              </ul>
-            </div>
+            <ul class="technologies-used">
+              <li class="technology">Vite</li>
+              <li class="technology">JavaScript</li>
+              <li class="technology">HTML</li>
+              <li class="technology">CSS</li>
+            </ul>
             <div class="links">
-              <div class="live-demo">
-                <a href="#">Live Demo</a>
-              </div>
-              <div class="github-redirect">
-                <a href="#">
-                  <ion-icon name="logo-github"> </ion-icon>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="image">
-            <img src="images/about_me.jpg" alt="Portfolio Website" />
-          </div>
-          <div class="content">
-            <h3>Portfolio Website</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipi Lorem ipsum dolor
-              sit, amet consectetur adipisicing elit. Dignissimos, minima non
-              labore facilis voluptatum assumenda?
-            </p>
-            <div class="technologies-used">
-              <ul>
-                <li class="technology">HTML</li>
-                <li class="technology">CSS</li>
-                <li class="technology">JavaScript</li>
-              </ul>
-            </div>
-            <div class="links">
-              <div class="live-demo">
-                <a href="#">Live Demo</a>
-              </div>
-              <div class="github-redirect">
-                <a href="#">
-                  <ion-icon name="logo-github"> </ion-icon>
-                </a>
-              </div>
+              <a href="https://azula-ecomerce.netlify.app/" class="live-demo"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/Beltonmmata/Azula-nodebased-fullstacke-ecommerceApp"
+                class="github-link"
+                >GitHub</a
+              >
             </div>
           </div>
         </div>
 
+        <!-- Project 3: Azula API -->
         <div class="project-card">
-          <div class="image">
-            <img src="images/about_me.jpg" alt="Portfolio Website" />
+          <div class="project-card-image">
+            <img src="images/about_me.jpg" alt="Azula API" />
           </div>
           <div class="content">
-            <h3>Another Project</h3>
+            <h3>Azula API</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-              exercitationem.
+              Powerful REST API built with Express, MongoDB, and JWT for
+              authentication. Fully documented and deployed.
             </p>
-            <div class="technologies-used">
-              <ul>
-                <li class="technology">React</li>
-                <li class="technology">Node.js</li>
-                <li class="technology">MongoDB</li>
-              </ul>
-            </div>
+            <ul class="technologies-used">
+              <li class="technology">Node.js</li>
+              <li class="technology">Express</li>
+              <li class="technology">MongoDB</li>
+            </ul>
             <div class="links">
-              <div class="live-demo">
-                <a href="#">Live Demo</a>
-              </div>
-              <div class="github-redirect">
-                <a href="#">
-                  <ion-icon name="logo-github"> </ion-icon>
-                </a>
-              </div>
+              <a href="https://azula-api.onrender.com/api/v1" class="live-demo"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/Beltonmmata/Azula-nodebased-fullstacke-ecommerceApp"
+                class="github-link"
+                >GitHub</a
+              >
             </div>
           </div>
         </div>
 
-        <!-- Add more project cards here -->
+        <!-- Project 4: Social Media App -->
+        <div class="project-card">
+          <div class="project-card-image">
+            <img src="images/about_me.jpg" alt="Social Media App" />
+          </div>
+          <div class="content">
+            <h3>Social Media App</h3>
+            <p>
+              MERN-based social platform featuring posts, comments, likes,
+              shares, and authentication.
+            </p>
+            <ul class="technologies-used">
+              <li class="technology">React</li>
+              <li class="technology">TailwindCSS</li>
+              <li class="technology">JavaScript</li>
+            </ul>
+            <div class="links">
+              <a
+                href="https://github.com/Beltonmmata/social-media-application"
+                class="github-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Net Salary Calculator -->
+        <div class="project-card">
+          <div class="project-card-image">
+            <img src="images/about_me.jpg" alt="Net Salary Calculator" />
+          </div>
+          <div class="content">
+            <h3>Net Salary Calculator</h3>
+            <p>
+              Python terminal app that calculates your net salary based on
+              deductions and tax brackets.
+            </p>
+            <ul class="technologies-used">
+              <li class="technology">Python</li>
+              <li class="technology">Terminal</li>
+            </ul>
+            <div class="links">
+              <a
+                href="https://github.com/Beltonmmata/net-salary-calculator"
+                class="github-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Symptom Prediction App -->
+        <div class="project-card">
+          <div class="project-card-image">
+            <img src="images/about_me.jpg" alt="Symptom Prediction" />
+          </div>
+          <div class="content">
+            <h3>Symptom Prediction App</h3>
+            <p>
+              Python app that predicts illness based on symptoms using simple
+              logic — built as a terminal project.
+            </p>
+            <ul class="technologies-used">
+              <li class="technology">Python</li>
+              <li class="technology">Machine Learning (Basic)</li>
+            </ul>
+            <div class="links">
+              <a
+                href="https://github.com/Beltonmmata/symptom-prediction-app"
+                class="github-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Proudchick (Client Project) -->
+        <div class="project-card">
+          <div class="project-card-image">
+            <img src="images/about_me.jpg" alt="Proudchick" />
+          </div>
+          <div class="content">
+            <h3>Proudchick Agri Shop</h3>
+            <p>
+              Client project for a chicken and agri-products business.
+              MERN-based, tailored for agribusiness.
+            </p>
+            <ul class="technologies-used">
+              <li class="technology">MERN Stack</li>
+              <li class="technology">MongoDB</li>
+              <li class="technology">React</li>
+              <li class="technology">Node.js</li>
+            </ul>
+            <div class="links">
+              <a href="#" class="live-demo">Live Link (Coming Soon)</a>
+              <a href="#" class="github-link">Private Repo</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- Contact Section -->
-    <section id="contact" class="contact section-container">
+
+    <!-- Contact -->
+    <section id="contact" class="section-container fade-in">
       <h2 class="section-header">Contact Me</h2>
-      <div class="content-container">
-        <!-- Left Side (Contact Details) -->
-        <div class="left">
-          <p>
-            <ion-icon name="mail-outline"></ion-icon> Email:
-            your.email@example.com
-          </p>
-          <p><ion-icon name="call-outline"></ion-icon> Phone: +1234567890</p>
-          <p>
-            <ion-icon name="location-outline"></ion-icon> Location: Nairobi,
-            Kenya
-          </p>
-          <p>
-            <ion-icon name="globe-outline"></ion-icon> Website:
-            codewithbelton.dev
-          </p>
-        </div>
 
-        <!-- Right Side (Form) -->
-        <form class="contact-form">
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
-          <input type="text" placeholder="Subject" required />
-          <textarea placeholder="Message" required></textarea>
-          <button type="submit">Send</button>
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form">
+          <h3 class="form-title">Send Me a Message</h3>
+
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            required
+          />
+
+          <label for="email">Your Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Tell me about your idea, project, or collaboration..."
+            required
+          ></textarea>
+
+          <button type="submit" class="submit-btn">Send Message</button>
         </form>
+
+        <!-- Contact Info + FAQ -->
+        <div class="contact-details">
+          <!-- Contact Info -->
+          <div class="contact-item">
+            <ion-icon name="call-outline"></ion-icon>
+            <div>
+              <h4>Phone</h4>
+              <p>+254 708152289</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <ion-icon name="mail-outline"></ion-icon>
+            <div>
+              <h4>Email</h4>
+              <p>beltonmmata@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <ion-icon name="location-outline"></ion-icon>
+            <div>
+              <h4>Location</h4>
+              <p>Bungoma, Kenya</p>
+            </div>
+          </div>
+
+          <!-- FAQ Section -->
+          <div class="faq-section">
+            <h4>Frequently Asked Questions</h4>
+
+            <div class="faq-item">
+              <button class="faq-toggle" aria-expanded="false">
+                How do I collaborate with you?
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+              <p class="faq-answer">
+                Simply reach out using the form or email. I’m open to freelance
+                work, joint projects, or even building something amazing
+                together.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-toggle" aria-expanded="false">
+                Are you available for remote work?
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+              <p class="faq-answer">
+                Absolutely — I’m open to both local and global opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <button
+      id="dark-mode-toggle"
+      class="dark-toggle-btn spin"
+      title="Toggle Dark Mode"
+    >
+      <ion-icon name="moon"></ion-icon>
+    </button>
 
     <!-- Footer -->
-    <footer class="footer section-container">
-      <p>&copy; 2025 Belton Mmata. All Rights Reserved.</p>
+    <footer class="footer">
+      <p>&copy; 2025 Belton M'mata Vidonyi. All rights reserved.</p>
+      <p>
+        Built with ❤️ using HTML, CSS, JavaScript. Hosted on
+        <a
+          href="https://netlify.com"
+          target="_blank"
+          style="color: var(--cooprate-color); text-decoration: none"
+          >Netlify</a
+        >.
+      </p>
+      <p>
+        Connect with me:
+        <a
+          href="https://github.com/Beltonmmata"
+          target="_blank"
+          style="color: var(--cooprate-color)"
+          >GitHub</a
+        >
+        |
+        <a
+          href="mailto:belton@developer.com"
+          style="color: var(--cooprate-color)"
+          >Email</a
+        >
+        |
+        <a
+          href="https://linkedin.com/in/beltonmmata"
+          target="_blank"
+          style="color: var(--cooprate-color)"
+          >LinkedIn</a
+        >
+      </p>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
